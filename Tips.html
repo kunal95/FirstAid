@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title></title>
+    <script src="js/jquery-1.10.2.min.js"></script>
+    <link href="css/style.css" rel="stylesheet" />
+    
+</head>
+<body>
+    <div id="header">FIRST AID</div>
+    <table style="width:100%;">
+        <tr>
+            <td class="buttonActive"><a href="index.html"><div>Guide</div></a></td>
+            <td class="button"><a href="kit.html"><div>Kit</div></a></td>
+            <td class="button"><a href="Tips.html"><div>Tips</div></a></td>
+            <td class="button" style="border-right:none"><a href="More.html"><div>More</div></a></td>
+        </tr>
+    </table>
+    <hr />
+    <div class="overview">
+        The primary focus of first aid training is to provide you with the skills and knowledge necessary, to minimise the effects of accidents or illnesses. First aiders provide a primary response to emergencies within the community and may sometimes be first and only person on the scene, resulting in the need to remain calm and be able to make the right decisions in a situation dominated by emotional stress and anxiety.<br />
+        <br /><b>First Aid</b> is the emergency care and treatment of a sick or injured person before more advanced medical assistance, in the form of the emergency medical services (EMS) arrives.
+    </div><hr />
+    <div class="content">
+        <div class="heading">Responsibilities of a first aider</div>
+        
+        <div class="plainText"><ul>
+    <li><b>Preserve</b> life and provide initial emergency care and treatment to sick or injured people </li>
+    <li><b>Protect</b> the unconscious </li>
+    <li><b>Prevent</b> a casualty’s condition from becoming worse </li>
+    <li><b>Promote</b> the recovery of the casualty. </li>
+</ul>
+</div>
+
+        <div class="heading">Philosophy of First Aid</div>
+
+        <div class="plainText">
+            In the pre-hospital setting, the key contributors to survival and recovery from illness and injury are prompt and effective maintenance of the body’s primary functions: 
+            <ul>
+                <li><b> Airway  </b></li>
+                <li><b>Breathing </b></li>
+                <li><b>Circulation </b></li>
+               <li><b>Bleeding control (life threatening) </b></li>
+                Medical research data suggests that effective support of these basic functions provides the most significant contribution to positive outcomes for casualties in the pre-hospital setting.   
+            </ul>
+        </div>
+</div>
+    <hr />
+    <div class="plainText" id="network"></div>
+    <script>
+    $.ajax({
+        type: 'GET',
+        url: "http://kunals.herobo.com/firstaid.json",
+        dataType: "jsonp",
+        success: function (data) {
+            alert(data);
+        }
+    });
+    </script>
+</body>
+</html>
